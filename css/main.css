@@ -26,21 +26,33 @@ body {
   margin: 8px;
 }
 
+.cards {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
 .card-img {
+
+}
+
+.card-img img {
+  display: block;
+  margin: 0 auto;
   width: 50px;
-  transform: translateX(-50%);
 }
 
 .card-body h2 {
-font-size: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .card-body p {
   text-align: left;
-}
-
-.cards li {
-  list-style-type: none;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 @media only screen and (min-width: 38em) {
@@ -61,6 +73,7 @@ font-size: 1.5rem;
   html {
     font-size: 120%;
     line-height: 1.5;
+    display: block;
   }
 
   h1,
