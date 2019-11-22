@@ -13,7 +13,6 @@ html {
   font-family: sans-serif;
   line-height: 1.3;
   font-size: 100%;
-  margin: .75em;
   width: 100%;
 }
 
@@ -23,17 +22,15 @@ html {
 
 body {
   display: block;
-  margin: 8px;
+  margin: 0;
 }
 
 .cards {
-  margin: 0;
   padding-left: 0;
   list-style-type: none;
-}
-
-.card-img {
-
+  margin: .5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card-img img {
@@ -45,14 +42,14 @@ body {
 .card-body h2 {
   font-size: 1.5rem;
   font-weight: normal;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin-top: 1.3rem;
+  margin-bottom: 0;
 }
 
 .card-body p {
   text-align: left;
-  padding-top: 0;
-  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 1.3rem;
 }
 
 @media only screen and (min-width: 38em) {
@@ -62,9 +59,22 @@ body {
     line-height: 1.4;
   }
 
-  h1,
+  h2,
   p {
     margin: 0 0 1.4rem;
+  }
+
+  .card-body h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 1.4rem;
+    margin-bottom: 0;
+  }
+
+  .card-body p {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 1.4rem;
   }
 }
 
@@ -73,12 +83,25 @@ body {
   html {
     font-size: 120%;
     line-height: 1.5;
-    display: block;
+    display: flex;
   }
 
-  h1,
+  h2,
   p {
     margin: 0 0 1.5rem;
+  }
+
+  .card-body h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .card-body p {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
   }
 
 }
